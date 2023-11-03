@@ -1,6 +1,6 @@
 "use client";
 
-import { sendSMS } from "@/lib/send-sms";
+import { sendSMS } from "@/app/lib/send-sms";
 import { useFormStatus, useFormState } from "react-dom";
 
 const initialState = {
@@ -14,9 +14,16 @@ function SubmitButton() {
     <button
       type="submit"
       aria-disabled={pending}
-      className="border rounded-md hover:bg-slate-50 p-2"
+      className="border rounded-md hover:bg-slate-50 p-2 flex justify-center items-center"
     >
-      {pending ? "Sending message..." : "Send"}
+      {pending ? (
+        <>
+          <div class="border-gray-300 h-5 w-5 animate-spin rounded-full border-2 border-t-blue-600 mr-2" />
+          Sending...
+        </>
+      ) : (
+        "Send"
+      )}
     </button>
   );
 }
