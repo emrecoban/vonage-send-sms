@@ -25,11 +25,11 @@ export async function sendSMS(prevState, formData) {
       text: formData.get("text"),
     });
 
-    const vonage_response = await vonage.sms.send({
+    /*     const vonage_response = await vonage.sms.send({
       to: data.number,
       from,
       text: data.text,
-    });
+    }); */
 
     revalidatePath("/");
     return {
