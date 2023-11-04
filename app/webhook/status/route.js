@@ -4,7 +4,7 @@ export async function POST(request) {
   const headersList = headers();
   const authorization = headersList.get("Authorization");
 
-  console.log("Signature secret: ", authorization);
+  console.log("Signature secret: ", headersList);
 
   const res = await request.json();
   console.log("SMS Status: ", JSON.stringify(res, null, 2));
