@@ -21,8 +21,8 @@ export async function POST(request) {
       status: 200,
     });
   } else {
-    return new Response("No Authorization", {
-      status: 401,
+    return new Response("No Content", {
+      status: 201,
     });
   }
 }
