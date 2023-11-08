@@ -19,3 +19,14 @@ It can be used through the website address [vonage-send-sms.vercel.app](https://
 ## Screenshot
 
 ![next_form](.github/next_form.png)
+
+## Built with
+
+- Next.js
+- Vonage Node.js SDK
+- Zod
+- TailwindCSS
+
+## License
+
+It's fully open source.
