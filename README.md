@@ -1,7 +1,5 @@
 <h1 align="center"><img src="app/favicon.ico" height="45" align="center" /><br />Using Vonage SMS API with Next.js</h1>
 
-## Introducing
-
 This repository has been created for educational purposes, aiming to provide guidance on using the Vonage SMS API with Next.js. You can find the relevant article at the following link: [Coming Soon!](insert_link_here).
 
 ## Overview
